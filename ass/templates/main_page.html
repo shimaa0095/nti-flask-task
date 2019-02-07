@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><strong>-Choose The Model</strong></p>
+<form action="/train_model" method="POST" target="_blank">
+  <input list="Models" name="model">
+  <datalist id="Models">
+    <option value="Logistic Regression">
+    <option value="KNN">
+    <option value="Random Forest">
+  </datalist>
+  <input type="submit" value="Train Model" >
+</form>
+
+<p><strong>-Get The Evaluation Matrix</strong></p>
+<form action="/evaluation matrix" target="_blank">
+    <p><input type = "submit" value = "Evaluation Matrix" /></p>
+  </form>
+
+<p><strong>-Test Your Row Data !! </strong>enter the data values, then get the prediction of the churn probability.</p>
+<form action="/predict churn" method="POST" target="_blank">
+  <p>gender    <input type="radio" name="gender" value=0> Female
+  <input type="radio" name="gender" value=1> Male<br></p>
+  <p>SeniorCitizen    <input type="radio" name="senior" value=0> No
+  <input type="radio" name="senior" value=1> Yes<br></p>
+  <p>Partner    <input type="radio" name="partner" value=0> No
+  <input type="radio" name="partner" value=1> Yes<br></p>
+  <p>Dependents    <input type="radio" name="depend" value=0> No
+  <input type="radio" name="depend" value=1> Yes<br></p>
+  <p>tenure    <input type = "text" name = "tenure" /></p>         
+  <p>PhoneService    <input type="radio" name="phone" value=0> No
+  <input type="radio" name="phone" value=1> No phone service 
+  <input type="radio" name="phone" value=2> Yes<br></p>
+  <p>MultipleLines    <input type="radio" name="lines" value=0> No
+  <input type="radio" name="lines" value=1> Yes<br></p> 
+  <p>TotalCharges    <input type = "text" name = "charges" /></p>
+  <input type="submit" value= "Predict Churn" >
+</form>
+
+</body>
+</html>
+

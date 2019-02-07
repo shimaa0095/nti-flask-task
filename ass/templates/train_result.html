@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+   <body>
+      <p> <strong>Train is done! </strong></p>
+      {% for key, value in result.items() %}
+         <p> model {{ key }} has scored  accuracy = {{ value }} %</p>
+      {% endfor %}
+   </body>
+</html>
